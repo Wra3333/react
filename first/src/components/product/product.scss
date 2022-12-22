@@ -1,0 +1,117 @@
+.product {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+  flex: 32%;
+}
+.product:hover .product__card{
+  transform: scale(1.03);
+  transition: all 1s;
+}
+.product__card {
+  margin-bottom: 10px;
+  text-align: center; 
+  will-change: transform;
+  transition: all 0.61s;
+   
+}
+.product__card img {
+  max-width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+  @media (max-width: 544.98px) {
+    height: 180px;
+   }
+}
+
+.product__title {
+  text-transform: capitalize;
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.product__menu {
+  max-width: 300px;
+  font-size: 23px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 5px;
+  word-break: break-all;
+}
+.product__price{
+  font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+}
+.cost {
+    display: flex;
+    outline: none;
+    background: #ffffff;
+    color: #eb5a1e;
+    min-width: 168px;
+    min-height: 44px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 6px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    justify-content: center;    
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
+    border: 1px solid #eb5a1e;;
+}
+.cost:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+}
+
+.cost_count {
+    padding: 11px 4px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    margin-left: 4px;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 50%;
+    background-color: #eb5a1e;
+    line-height: 0px;
+}
+
+.cost_count:empty {
+  display: none;
+}
+.cost:hover .cost_count{
+  background:#F9F9F9;
+  color: #EB5A1E;
+}
+.cost:hover{
+  background: #f24701;
+  color: #F9F9F9;
+}
+.sell{
+  background: #EB5A1E;
+  color: #F9F9F9;
+}

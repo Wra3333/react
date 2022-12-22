@@ -1,0 +1,29 @@
+.search{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    transition: all 0.3s;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 544.98px) {
+        display: none;
+      }
+}
+.search__icon {
+    opacity: 0.3;
+    margin-right: 6px;
+}
+.search__input{
+    position: relative;;
+    
+    font-size: 16px;
+   &::search-cancel-button{
+    display: none;
+   }
+   transition: all 0.3s;
+}
+.search__input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+}

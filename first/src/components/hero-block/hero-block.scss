@@ -1,0 +1,98 @@
+.hero-block{
+    text-align: center;          
+}
+
+
+.hero-block__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.hero-block__title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.hero-block-red{
+    display: block;
+    color: #FF5C00;
+}
+.hero-block__img{
+    margin-top: -12px;
+    height: 150px;
+    animation-name: burger;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.41, 0.45, 0.47, 1.01);
+    @media (max-width: 544.98px) {
+        height: 120px;
+       }
+
+}
+#browser {
+    transform: translateY(-100%);
+    animation: moveDown 1.5s cubic-bezier(0.65, 0.05, 0.36, 1) alternate both;
+  }
+  @keyframes moveDown {
+    from {
+        height: 0px;
+        transform: translate(-100%, -100%);
+    }
+    50%{
+        transform: translate(0, 500px);
+    }
+    to {
+        height: 150px;
+        transform: translate(0, 0%);
+    }
+  }
+  @media (max-width: 544.98px) {
+  @keyframes moveDown {
+    from {
+        height: 0px;
+        transform: translate(-100%, -100%);
+    }
+    50%{
+        transform: translate(0, 500px);
+    }
+    to {
+        height: 110px;
+        transform: translate(0, 0%);
+    }
+  }
+}
+
+// @keyframes burger {
+//     from{
+//        height:0px;
+//        position: absolute;
+//        top: 50%;    
+          
+//     }
+//     50%{
+//         height: 150px;
+//     }
+//     to{ position: absolute;
+//         height:  150px;
+//         top: 0%;
+//     }
+//   }
+//   @media (max-width: 544.98px) {
+//     @keyframes burger {
+//         from{
+//            height:0px;
+//            position: absolute;
+//            top: 50%;    
+              
+//         }
+//         50%{
+//             height: 120px;
+//         }
+//         to{ position: absolute;
+//             height:  120px;
+//             top: 0%;
+//         }
+//       }
+//   }

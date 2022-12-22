@@ -1,0 +1,55 @@
+.sort {
+    position: relative;
+    @media (max-width: 991.98px) {
+        order: 1;
+    }
+}
+.sort__label {
+    display: flex;
+    align-items: center;
+}
+.svg__trans{
+    transform: rotate(180deg);
+}
+.sort__label svg{
+    transition: all 0.5s;
+}
+.sort__popup {
+    position: absolute;
+    transition: all 1s;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 9%);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+    z-index: 1;
+}
+.sort__label *:not(:last-child) {
+    margin-right: 8px;
+}
+.sort__label span {
+    color: #fe5f1e;
+    border-bottom: 1px dashed #fe5f1e;
+    cursor: pointer;
+}
+.sort__popup ul {
+    overflow: hidden;
+}
+.sort__popup ul li.active {
+    font-weight: bold;
+    color: #fe5f1e;
+    background: rgba(254,95,30,0.05);
+}
+.sort__popup ul li:hover{
+    background: rgba(254,95,30,0.05);
+} 
+.sort__popup ul li {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    background: #ffffff;
+    border-radius: 0px;
+    transition: background-color 0.1s ease-in-out;
+}

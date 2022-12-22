@@ -1,0 +1,41 @@
+.page__bg-categ{
+  margin-bottom: 15px;
+  overflow: auto;
+  @media (max-width: 991.98px) {
+    order: 2;
+}
+}
+.bg-categ__row {
+  display: flex;
+  gap: 10px;
+}
+
+ul li:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.1s ease-in-out;
+
+}
+ul li {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background: #F9F9F9;
+  padding: 13px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  @media (max-width: 767.98px) {
+    flex-shrink: 0;
+  }
+  
+}
+.bg-categ__img{
+        vertical-align: bottom;
+        margin: -2px 4px;
+}
+.bg-categ_active,.bg-categ_active:hover{
+  background-color: #eb5a1e;
+  color: white;
+  
+}
